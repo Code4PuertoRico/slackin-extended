@@ -22,10 +22,10 @@ html(lang='en', class=`${large ? 'large' : ''}${iframe ? 'iframe' : ''} theme-${
     if analytics
       script(async, src=`https://www.googletagmanager.com/gtag/js?id={gaID}`)
       script
-      | window.dataLayer = window.dataLayer || [];
-      | function gtag(){dataLayer.push(arguments);}
-      | gtag('js', new Date());
-      | gtag('config', '#{analytics}');
+        | window.dataLayer = window.dataLayer || [];
+        | function gtag(){dataLayer.push(arguments);}
+        | gtag('js', new Date());
+        | gtag('config', '#{analytics}');
   body
 
     .splash
